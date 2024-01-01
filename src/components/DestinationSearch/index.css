@@ -40,9 +40,22 @@
   outline: none;
   height: 30px;
 }
-.place-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-self: center;
-  justify-content: center;
+
+@media (max-width: 576px), (min-width: 576px) {
+  .place-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px), (min-width: 992px), (min-width: 1200px) {
+  .place-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
